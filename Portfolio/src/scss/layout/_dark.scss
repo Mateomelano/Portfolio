@@ -1,0 +1,96 @@
+@use '../base/variables' as v;
+@use '../base/mixsins' as m;
+
+//Header
+body.active header {
+    background-color: #333;
+    a,
+    button,
+    h1{
+        color: v.$blanco;
+    }
+}
+
+//Inicio
+body.active .inicio  {
+    background-color: v.$gris-oscuro;
+    color: v.$blanco;
+    i{
+        color: v.$blanco;
+        &:hover{
+            cursor: pointer;
+            transition: 0.2s;
+            color: v.$azul;
+        }
+    }
+    .button:hover {
+        box-shadow: 0 10px 36px rgb(121, 117, 117);
+      }
+}
+
+
+//Sobre Mi
+body.active .sobre_mi{
+    background-color: v.$gris-oscuro;
+
+    color: v.$blanco;
+
+    .sobre-mi__contenedor2{
+        box-shadow: 0 4px 25px rgba(90, 91, 92, 0.144);
+        p{
+            color: v.$blanco;
+        }
+        
+    }
+}
+
+//Proyectos
+body.active .proyects{
+    background-color: v.$gris-oscuro;
+    color: v.$blanco;
+    div{
+        h4,
+        i{
+            color: v.$blanco;
+        }
+    }
+    .proyecto-1{
+        box-shadow: 0 4px 25px rgba(90, 91, 92, 0.144);
+    }
+}
+//Skills
+body.active .skills{
+    background-color: v.$gris-oscuro;
+    h2{
+        color: v.$blanco;
+    }
+}
+//Certificados
+body.active .certificates{
+    background-color: v.$gris-oscuro;
+}
+//Footer
+body.active .contact{
+    background-color: v.$gris-oscuro;
+    h2,
+    h3,
+    i{
+        color: v.$blanco;
+    }
+}
+
+//Contact
+
+body.active .contact{
+    i{
+        &:hover{
+            color: v.$azul;
+            transition: 0.2s;
+        }
+    }
+}
+
+//all
+body.active{
+    background-color: v.$gris-oscuro;
+}

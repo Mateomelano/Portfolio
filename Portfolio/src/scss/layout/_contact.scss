@@ -1,0 +1,80 @@
+@use '../base/variables' as v;
+@use '../base/mixsins' as m;
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        color: v.$negro;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 3rem;
+
+    }
+}
+
+.contact-title{
+    display: block;
+    text-align: center;
+    margin-top: 10rem;
+    h1{
+        color: v.$azul;
+        font-size: 3.3rem;
+        font-weight: 500;
+    }
+    ::after{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: v.$azul;
+        margin: auto;
+        
+    }
+}
+
+.contact-container{
+    text-align: center;
+    margin-bottom: 10rem;
+    width: 30%;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    padding: 1.1rem 0;
+    border-radius: 0.5rem;
+}
+
+i{
+    transition: 0.5s;
+    color: v.$negro;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    i{
+        transition: 0.5s;
+        font-size: 3rem;
+        color: v.$negro;
+        &:hover{
+            cursor: pointer;
+            transition: 0.2s;
+            color: v.$azul;
+
+        }
+    }
+}
+
+.contact-h3{
+    h2{
+        transition: 0.5s;
+        color: v.$negro;
+        font-size: 2.0rem;
+        text-align: center;
+        
+    }
+}

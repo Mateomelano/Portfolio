@@ -1,0 +1,169 @@
+@use '../base/variables' as v;
+@use '../base/mixsins' as m;
+
+@include m.max-desktopXL{    
+    //Inicio
+    img{
+        width: 15vh;
+        height: 15vh;
+    }
+    .imagen1{
+        display: none;
+        
+    }
+
+    .first-part{
+        height: 35vh;
+        
+    }
+
+    // Sobre mi
+
+    .sobre-mi-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+
+    }
+    .sobre-mi__contenedor1{
+        margin: 1rem;
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    .sobre-mi__title{
+        margin-top: 15rem;
+    }
+
+
+    .sobre-mi__title2 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .sobre-mi__text{
+        font-size: 1.5rem;
+
+    }
+
+
+    //Proyectos
+    .title-web, 
+    .title-python{
+        h1{
+            font-size: 2.5rem;
+            
+        }
+    }
+    
+
+    .proyects-web ,
+    .proyects-python{
+        margin: 10rem;
+        @include m.grid(1, 15rem);
+        margin: 0 auto;
+        margin-top: 15rem;
+    }
+
+    .proyecto-1,
+    .proyecto-2,
+    .proyecto-3,
+    .proyecto-python{
+        width: 45vh;
+        height: 50vh;
+    }
+
+    .proyects-python{
+        margin-top: 15rem;
+    }
+
+    .title-python{
+        position: relative;
+        top: 5rem;
+    }
+
+
+
+
+
+
+    //Certificados
+    .certificates-div{
+            flex-direction: column;
+        }
+        .title-certificates{
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .certificates-container{
+            img{
+                width: 30vh;
+                height: 15vh;
+            }
+        }
+
+
+    //Contacto
+
+
+    .contact-container.special {
+        width: 40rem; 
+        height: 32rem;
+    }    
+}
+ 
+
+    //Skills
+
+
+@include m.max-tablet{
+    .skills-container.special{
+        width: 80%;
+        gap: 3rem;
+        img{
+            width: 6vh;
+            height: 6vh;
+        }
+    }
+    .title-skills.special{
+        h1{
+            font-size: 3.3rem;
+            margin-top: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+            
+        }
+        h3{
+            font-size: 1.8rem;
+            
+        }
+    }
+
+}
+
+
+@include m.max-tablet{
+    .contact-container.special {
+        width: 35rem;
+        height: 32rem;
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+
+    .contact-h3.special{
+        h2{
+            font-size: 1.2rem;
+        }
+    }
+
+    .proyecto-1.special{
+        width: 35vh;
+        height: 70vh;
+    }
+}
