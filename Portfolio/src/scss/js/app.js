@@ -42,13 +42,36 @@ function cambiarIdioma_en() {
     contacto.textContent = "Contact";
 
     // Sección de Inicio
-    const titulo = document.querySelector(".title");
-    titulo.innerHTML = `
-        ¡Hi! <br />
-        I'm <span class="title-color">Mateo</span> <br />
-        Frontend Developer
-    `;
+    const primeraParte = document.querySelector(".first-part");
+    primeraParte.innerHTML = ` 
+        <h1 class="title">
+            Hi, <br />
+            I'm <span class="title-color">Mateo</span> <br />
+            Frontend Developer
+        </h1>
+        <a 
+            href="https://drive.google.com/file/d/1zOVQYlDrSJgscWJDwFw_1UltoQqOjORl/view?usp=sharing"
+            target="_blank"
+            class="button cv"
+            >Resume</a
+        >
 
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/mateo-melano-8148b22a3/" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/Mateomelano" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+            ></a>
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mateomelano2003@gmail.com"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-gmail"></i
+            ></a>
+        </div>
+    
+    `;
     // Sección de Sobre Mí
     document.querySelector(".sobre-mi__title").textContent = "About Me";
     document.querySelector(".sobre-mi__title2").textContent = "I'm Mateo Melano";
@@ -67,7 +90,7 @@ function cambiarIdioma_en() {
     document.getElementById("proyecto-6-titulo").textContent = "Coffee Blog";
 
 
-    document.getElementById("proyecto-python-1-titulo").textContent = "Reservation System with MVC and POO"; 
+    document.getElementById("proyecto-python-1-titulo").textContent = "Reservation System - MVC and POO"; 
     document.getElementById("proyecto-python-2-titulo").textContent = "Python Games"; 
     document.getElementById("proyecto-python-3-titulo").textContent = "Patient Management System - MVC and POO"; 
     // Sección de Skills
@@ -122,11 +145,35 @@ function cambiarIdioma_es() {
     contactoes.textContent = "Contacto";
 
     // Sección de Inicio
-    const titulo = document.querySelector(".title");
-    titulo.innerHTML = `
-        Hola, <br />
-        Soy <span class="title-color">Mateo</span> <br />
-        Frontend Developer
+    const primeraParte = document.querySelector(".first-part");
+    primeraParte.innerHTML = ` 
+        <h1 class="title">
+            Hola, <br />
+            Soy <span class="title-color">Mateo</span> <br />
+            Frontend Developer
+        </h1>
+        <a 
+            href="https://drive.google.com/file/d/1MnaAfbE7QFHA8cYgeXH52gXkmVmPlBaU/view?usp=sharing"
+            target="_blank"
+            class="button cv"
+            >Ver CV</a
+        >
+
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/mateo-melano-8148b22a3/" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/Mateomelano" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+            ></a>
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mateomelano2003@gmail.com"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-gmail"></i
+            ></a>
+        </div>
+    
     `;
 
     // Sección de Sobre Mí
@@ -147,12 +194,12 @@ function cambiarIdioma_es() {
     document.getElementById("proyecto-6-titulo").textContent = "Blog de Cafe";
 
 
-    document.getElementById("proyecto-python-1-titulo").textContent = "Sistemas de Reservas con MVC y POO"; 
+    document.getElementById("proyecto-python-1-titulo").textContent = "Sistemas de Reservas - MVC y POO"; 
     document.getElementById("proyecto-python-2-titulo").textContent = "Juegos Python"; 
-    document.getElementById("proyecto-python-3-titulo").textContent = "Consulta de Pacientes con MVC y POO"; 
+    document.getElementById("proyecto-python-3-titulo").textContent = "Consulta de Pacientes - MVC y POO"; 
     // Sección de Skills
     document.querySelector(".title-skills h1").textContent = "Skills";
-    document.querySelector(".title-skills h2").textContent = " Mis lenguajes de programación, librerías, tecnologías y herramientas";
+    document.querySelector(".title-skills h2").textContent = "Mis lenguajes de programación, librerías, tecnologías y herramientas";
     const titleLenguajes = document.querySelectorAll(".title-lenguajes");
     titleLenguajes[0].textContent = "Lenguajes";
     titleLenguajes[1].textContent = "Librerias & Frameworks";
@@ -202,3 +249,5 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  

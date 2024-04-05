@@ -1,0 +1,85 @@
+@use '../base/variables' as v;
+@use '../base/mixsins' as m;
+
+
+.slider-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px * 12);
+    animation: scroll 25s linear infinite;
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    perspective: 100px;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    margin: 2rem;
+    border-radius: 0.5rem;
+
+}
+
+.slide:hover{
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.25);
+    cursor: pointer;
+    border: 1px solid v.$azul;
+    transform: scale(1.1);
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+
+img{
+    width: 8vh;
+    height: 8vh;
+    transition: transform 1s;
+}
+
+//Sombras
+
+
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+
+.slide::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+img:hover{
+    transform: translateZ(20px);
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 6));
+    }
+}

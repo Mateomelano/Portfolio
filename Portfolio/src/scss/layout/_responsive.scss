@@ -69,11 +69,9 @@
     }
 
     .proyecto-1,
-    .proyecto-2,
-    .proyecto-3,
     .proyecto-python{
         width: 45vh;
-        height: 50vh;
+        height: 70vh;
     }
 
     .proyects-python{
@@ -146,13 +144,16 @@
 
 }
 
-
+//Contacto
 @include m.max-tablet{
     .contact-container.special {
-        width: 35rem;
+        width: 30rem;
         height: 32rem;
         h2{
             font-size: 1.8rem;
+        }
+        h3{
+            font-size: 1.5rem;
         }
     }
 
@@ -166,4 +167,33 @@
         width: 35vh;
         height: 70vh;
     }
+    .footer-container.special{
+        p{
+            font-size: 1.5rem;
+        }
+    }
 }
+
+
+//Slider
+@include m.max-tablet{
+
+    .title-skills.special{
+        margin-top: 5rem;
+    }
+    .slide.special{
+        height: 100px;
+        width: 150px;
+        img{
+            height: 7vh;
+            width: 7vh;
+        }
+    }
+
+}
+
+@include m.max-desktopXL{
+    .title-skills.special{
+        margin-top: 5rem;
+    }
+} 
