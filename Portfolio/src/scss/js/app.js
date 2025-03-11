@@ -251,3 +251,33 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   
+
+
+//Sweet alert para imagenes
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".certificates-container img");
+    console.log(images); // Verifica si realmente se están seleccionando imágenes
+    
+    images.forEach(img => {
+        img.addEventListener("click", function (event) {
+            if (this.closest("a")) {
+                event.preventDefault();
+            }
+
+            Swal.fire({
+                imageUrl: this.src,
+                imageAlt: "Certificado",
+                showCloseButton: true,
+                showConfirmButton: false,
+                background: "rgba(0, 0, 0, 0.2)",
+                width: "20%", // Aumenta el ancho del modal
+                height: "50%",
+                padding: "1rem",
+                customClass: {
+                    popup: "custom-swal-popup",
+                    image: "custom-swal-image"
+                }
+            });
+        });
+    });
+});
