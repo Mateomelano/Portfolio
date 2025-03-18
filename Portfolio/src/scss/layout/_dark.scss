@@ -60,7 +60,6 @@ body.active .proyects{
 }
 //Skills
 body.active .skills{
-    background-color: v.$gris-oscuro;
     h2{
         color: v.$blanco;
     }
@@ -93,4 +92,10 @@ body.active .contact{
 //all
 body.active{
     background-color: v.$gris-oscuro;
+    h2{
+        color: v.$blanco;
+    }
+    h4 {
+        color: v.$blanco;
+    }
 }
