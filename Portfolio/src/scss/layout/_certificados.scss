@@ -74,3 +74,37 @@
     }
 }
 
+ // Centrar el último certificado si hay un número impar
+ .certificates-container:last-child:nth-child(odd) {
+    grid-column: span 2; // Hace que el último certificado ocupe dos columnas y se vea centrado
+    justify-self: center; // Asegura la alineación central
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#lightbox.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#lightbox img {
+    height: 60vh !important;
+    width: 90vh !important;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    
+    
+}
