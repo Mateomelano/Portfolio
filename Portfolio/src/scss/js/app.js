@@ -278,31 +278,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Sweet alert para imagenes
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".certificates-container img");
+  const images = document.querySelectorAll("#imagen-certificado");
+  const lightbox = document.createElement("div");
+  lightbox.id = "lightbox";
+  document.body.appendChild(lightbox);
   
-
-  images.forEach((img) => {
-    img.addEventListener("click", function (event) {
-      if (this.closest("a")) {
-        event.preventDefault();
-      }
-
-      Swal.fire({
-        imageUrl: this.src,
-        imageAlt: "Certificado",
-        showCloseButton: true,
-        showConfirmButton: false,
-        background: "rgba(0, 0, 0, 0.2)",
-        width: "20%", // Aumenta el ancho del modal
-        height: "50%",
-        padding: "1rem",
-        customClass: {
-          popup: "custom-swal-popup",
-          image: "custom-swal-image",
-        },
+  images.forEach(image => {
+      image.addEventListener("click", function () {
+          lightbox.classList.add("active");
+          const img = document.createElement("img");
+          img.src = image.src;
+          while (lightbox.firstChild) {
+              lightbox.removeChild(lightbox.firstChild);
+          }
+          lightbox.appendChild(img);
       });
-    });
+  });
+  
+  lightbox.addEventListener("click", function () {
+      lightbox.classList.remove("active");
   });
 });
