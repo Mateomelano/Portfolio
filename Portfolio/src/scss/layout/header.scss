@@ -10,10 +10,10 @@
         z-index: 100;
         top: 0;
         left: 0;
-        background-color: rgba(66, 88, 175, 0.9);
+        background-color: rgba(16, 24, 61, 0.99);
 
     h1{
-        color: v.$negro;
+        color: v.$blanco;
         text-align: center;
         margin: 0;
         padding: 2rem 0;
@@ -35,7 +35,7 @@
             display: block;
             border: 0;
             background-color: transparent;
-            color: v.$negro;
+            color: v.$blanco;
             font-size: 3rem;
             cursor: pointer;
             
@@ -111,7 +111,7 @@
         transition: 0.5s;
         display: block;
         text-align: center;
-        color: v.$negro;
+        color: v.$blanco;
         font-size: 2rem;
         margin-bottom: 1rem;
         padding: 0.5rem 0;
