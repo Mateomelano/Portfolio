@@ -41,9 +41,13 @@
 }
 
 .imagen2{
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
     border-radius: 50%;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
     object-fit: cover;
     margin-right: 5rem;
-    
+    transition: transform 0.2s ease-out;
+}
+
+.second-part:hover .imagen2 {
+    transition: none; /* Elimina la transición para movimientos en vivo */
 }

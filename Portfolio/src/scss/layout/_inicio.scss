@@ -65,13 +65,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 500px; /* Agrega profundidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.imagen1{
+.imagen1 {
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    box-shadow: 0 25px 25px rgba(14, 36, 49, 0.35);
     width: 35vh;
     height: 35vh;
+    transition: transform 0.2s ease-out;
 }
 
+.second-part:hover .imagen1 {
+    transition: none; /* Elimina la transición para movimientos en vivo */
+}

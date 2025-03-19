@@ -12,13 +12,28 @@ cerrar.addEventListener("click", () => {
   nav.classList.remove("nav-visible");
 });
 
-// Cambiar Idioma Ingles
-const botonEn = document.getElementById("boton-en");
-if (botonEn) {
-  botonEn.addEventListener("click", () => {
-    cambiarIdioma_en();
-  });
-}
+
+const botonIdioma = document.getElementById("boton-idioma");
+const iconoBandera = document.getElementById("icono-bandera");
+
+// Definimos las rutas correctas de las banderas
+const banderaES = "./build/img/bandera-españa.svg";
+const banderaEN = "./build/img/reinounido-bandera.svg";
+
+// 🔹 Al cargar la página, aseguramos que el src es EXACTAMENTE el esperado
+window.addEventListener("load", () => {
+    iconoBandera.setAttribute("src", banderaES);
+});
+
+botonIdioma.addEventListener("click", () => {
+    if (iconoBandera.getAttribute("src") === banderaES) {
+        iconoBandera.setAttribute("src", banderaEN); // Cambia a bandera UK
+        cambiarIdioma_en(); // Cambia el idioma a inglés
+    } else {
+        iconoBandera.setAttribute("src", banderaES); // Cambia a bandera España
+        cambiarIdioma_es(); // Cambia el idioma a español
+    }
+});
 
 function cambiarIdioma_en() {
   // Header
@@ -133,13 +148,6 @@ function cambiarIdioma_en() {
     `;
 }
 
-// Cambiar Idioma Ingles
-const botonEs = document.getElementById("boton-es");
-if (botonEs) {
-  botonEs.addEventListener("click", () => {
-    cambiarIdioma_es();
-  });
-}
 
 function cambiarIdioma_es() {
   // Header
@@ -193,7 +201,7 @@ function cambiarIdioma_es() {
   document.querySelector(".sobre-mi__title").textContent = "Sobre Mi";
   document.querySelector(".sobre-mi__title2").textContent = "Soy Mateo Melano";
   document.querySelector(".sobre-mi__text").textContent =
-    "Egresado de la carrera Tecnicatura en Programacion en la U.T.N. Actualmente trabajo en el equipo de desarollo de Suprasoft.";
+    "Egresado de la carrera Tecnicatura en Programacion en la U.T.N. Actualmente trabajando en el equipo de desarollo de Suprasoft.";
 
   // Sección de Proyectos
   document.querySelector(".title-proyectos").textContent = "Proyectos";
@@ -301,4 +309,35 @@ document.addEventListener("DOMContentLoaded", function () {
   lightbox.addEventListener("click", function () {
       lightbox.classList.remove("active");
   });
+});
+
+
+//Efecto Imagen
+const image = document.querySelector(".imagen1");
+
+
+image.addEventListener("mousemove", (e) => {
+    const { left, top, width, height } = image.getBoundingClientRect();
+    const x = (e.clientX - left - width / 2) / 15; 
+    const y = (e.clientY - top - height / 2) / 15;
+
+    image.style.transform = `rotateX(${y}deg) rotateY(${x}deg) scale(0.99)`;
+});
+
+image.addEventListener("mouseleave", () => {
+    image.style.transform = "rotateX(0) rotateY(0) scale(1)";
+});
+
+const image2 = document.querySelector(".imagen2");
+
+image2.addEventListener("mousemove", (e) => {
+    const { left, top, width, height } = image2.getBoundingClientRect();
+    const x = (e.clientX - left - width / 2) / 1;  
+    const y = (e.clientY - top - height / 2) / 1;  
+
+    image2.style.transform = `rotateX(${y}deg) rotateY(${x}deg) scale(0.95)`; 
+});
+
+image2.addEventListener("mouseleave", () => {
+    image2.style.transform = "rotateX(0) rotateY(0) scale(1)";
 });
