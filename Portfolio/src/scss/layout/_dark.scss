@@ -3,7 +3,7 @@
 
 //Header
 body.active header {
-    background-color: #333;
+    background-color: #10183d;
     a,
     button,
     h1{
@@ -36,7 +36,7 @@ body.active .sobre_mi{
     color: v.$blanco;
 
     .sobre-mi__contenedor2{
-        box-shadow: 0 4px 25px rgba(90, 91, 92, 0.144);
+        box-shadow:  5px 0px 10px 10px rgba(187, 189, 190, 0.445);
         p{
             color: v.$blanco;
         }
@@ -87,6 +87,10 @@ body.active .contact{
             transition: 0.2s;
         }
     }
+}
+
+.contact-container{
+    box-shadow: 5px 0px 10px 10px rgba(121, 117, 117, 0.507);
 }
 
 //all
