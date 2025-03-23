@@ -201,7 +201,7 @@ function cambiarIdioma_es() {
   document.querySelector(".sobre-mi__title").textContent = "Sobre Mi";
   document.querySelector(".sobre-mi__title2").textContent = "Soy Mateo Melano";
   document.querySelector(".sobre-mi__text").textContent =
-    "Egresado de la carrera Tecnicatura en Programacion en la U.T.N. Actualmente trabajando en el equipo de desarollo de Suprasoft.";
+    "Egresado de la carrera Tecnicatura en Programacion en la U.T.N. Actualmente trabajando en el equipo de desarrollo de Suprasoft.";
 
   // Sección de Proyectos
   document.querySelector(".title-proyectos").textContent = "Proyectos";

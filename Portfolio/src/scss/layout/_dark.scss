@@ -62,7 +62,9 @@ body.active .proyects{
 body.active .skills{
     h2{
         color: v.$blanco;
+        //box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     }
+
 }
 //Certificados
 body.active .certificates{
@@ -101,5 +103,9 @@ body.active{
     }
     h4 {
         color: v.$blanco;
+    }
+
+    .slide {
+        box-shadow: 0 4px 25px rgba(255, 255, 255, 0.253) !important;
     }
 }
