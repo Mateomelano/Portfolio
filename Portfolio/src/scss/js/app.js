@@ -61,7 +61,7 @@ function cambiarIdioma_en() {
             Junior Developer
         </h1>
         <a 
-            href="https://drive.google.com/file/d/1zOVQYlDrSJgscWJDwFw_1UltoQqOjORl/view?usp=sharing"
+            href="https://drive.google.com/file/d/1x0mFiwizd0lr5cQvdeyF7HzdjKvusq3R/view?usp=sharing"
             target="_blank"
             class="button cv"
             >Resume</a
@@ -92,7 +92,7 @@ function cambiarIdioma_en() {
   // Sección de Proyectos
   document.querySelector(".title-proyectos").textContent = "Projects";
   document.querySelector(".title-webb").textContent = "Web Projects";
-  document.querySelector(".title-pythonn").textContent = "Python Projects";
+  //document.querySelector(".title-pythonn").textContent = "Python Projects";
 
   document.getElementById("proyecto-2-titulo").textContent = "Online Store";
   document.getElementById("proyecto-3-titulo").textContent =
@@ -103,12 +103,12 @@ function cambiarIdioma_en() {
     "Lubricantes Alvear Suppliers Website";
   document.getElementById("proyecto-6-titulo").textContent = "Coffee Blog";
 
-  document.getElementById("proyecto-python-1-titulo").textContent =
-    "Reservation System - MVC and POO";
-  document.getElementById("proyecto-python-2-titulo").textContent =
-    "Python Games";
-  document.getElementById("proyecto-python-3-titulo").textContent =
-    "Patient Management System - MVC and POO";
+  //document.getElementById("proyecto-python-1-titulo").textContent =
+   // "Reservation System - MVC and POO";
+  //document.getElementById("proyecto-python-2-titulo").textContent =
+  //  "Python Games";
+  //document.getElementById("proyecto-python-3-titulo").textContent =
+    //"Patient Management System - MVC and POO";
   // Sección de Skills
   document.querySelector(".title-skills h1").textContent = "Skills";
   document.querySelector(".title-skills h2").textContent =
@@ -127,12 +127,12 @@ function cambiarIdioma_en() {
   const certificateTitles = document.querySelectorAll(
     ".certificates-container h4"
   );
-  certificateTitles[0].textContent = "Participation in C.N.E.S.I.";
-  certificateTitles[1].textContent = "Node.js Course";
-  certificateTitles[2].textContent = "SQL Course";
-  certificateTitles[3].textContent = "Web Development Course";
-  certificateTitles[4].textContent = "Python Course";
-  certificateTitles[5].textContent = "Diploma Certificate";
+  certificateTitles[0].textContent = "University Degree";
+  certificateTitles[1].textContent = "Participation in C.N.E.S.I.";
+  certificateTitles[2].textContent = "Node.js Course";
+  certificateTitles[3].textContent = "SQL Course";
+  certificateTitles[4].textContent = "Web Development Course";
+  certificateTitles[5].textContent = "Python Course";
 
   // Sección de Contacto
   const titleContact = document.querySelector(".contact-title h1");
@@ -174,7 +174,7 @@ function cambiarIdioma_es() {
             Junior Developer
         </h1>
         <a 
-            href="https://drive.google.com/file/d/1MnaAfbE7QFHA8cYgeXH52gXkmVmPlBaU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NVn8XJGzzIT1uHYQBiEk44dgkdOyjrnr/view?usp=sharing"
             target="_blank"
             class="button cv"
             >Ver CV</a
@@ -206,7 +206,7 @@ function cambiarIdioma_es() {
   // Sección de Proyectos
   document.querySelector(".title-proyectos").textContent = "Proyectos";
   document.querySelector(".title-webb").textContent = "Proyectos Web";
-  document.querySelector(".title-pythonn").textContent = "Proyectos Python";
+  //document.querySelector(".title-pythonn").textContent = "Proyectos Python";
 
   document.getElementById("proyecto-2-titulo").textContent = "Tienda Online";
   document.getElementById("proyecto-3-titulo").textContent =
@@ -217,12 +217,12 @@ function cambiarIdioma_es() {
     "Web Proveedores Lubricantes Alvear";
   document.getElementById("proyecto-6-titulo").textContent = "Blog de Cafe";
 
-  document.getElementById("proyecto-python-1-titulo").textContent =
-    "Sistemas de Reservas - MVC y POO";
-  document.getElementById("proyecto-python-2-titulo").textContent =
-    "Juegos Python";
-  document.getElementById("proyecto-python-3-titulo").textContent =
-    "Consulta de Pacientes - MVC y POO";
+  //document.getElementById("proyecto-python-1-titulo").textContent =
+    //"Sistemas de Reservas - MVC y POO";
+  //document.getElementById("proyecto-python-2-titulo").textContent =
+    //"Juegos Python";
+  //document.getElementById("proyecto-python-3-titulo").textContent =
+    //"Consulta de Pacientes - MVC y POO";
   // Sección de Skills
   document.querySelector(".title-skills h1").textContent = "Skills";
   document.querySelector(".title-skills h2").textContent =
@@ -245,7 +245,7 @@ function cambiarIdioma_es() {
   certificateTitles[2].textContent = "Curso SQL";
   certificateTitles[3].textContent = "Curso Desarrolo Web";
   certificateTitles[4].textContent = "Curso Python";
-  certificateTitles[5].textContent = "Constancia de Titulo Universitario";
+  certificateTitles[5].textContent = "Titulo Universitario";
 
   // Sección de Contacto
   const titleContact = document.querySelector(".contact-title h1");
